@@ -10,23 +10,19 @@ using namespace std;
 int main(void){
 	string message;
 
-	//get message
 	cout<<"Please enter the message :";
 	getline(cin,message);
 	cout<<"The message you entered is :"<<message;
 
-	//parse the message in FSIZE frames.
 	vector<string> frames;
 	cout<<"Dividing the message into Frames of size : "<<FSIZE<<endl;
 	for(int i = 0 ; i < message.size() ; i=i+3){
 		string f(message,i,3);
 		frames.push_back(f);
 	}
-	//Display the parsed Frames
 	cout<<"The Frames after dividing are as follows:"<<endl;
 	for(int i=0;i < frames.size();i++)
 		cout<<i+1<<"   "<<frames.at(i)<<endl;
-	//Get the random sequence of Packets recieved at the reciever.
 	cout<<"Get the random sequence of Packets recieved at the reciever:";
 	vector<int> reciever;
 	for(int i=0;i<frames.size();i++){
