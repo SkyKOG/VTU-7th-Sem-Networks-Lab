@@ -38,8 +38,8 @@ int main()
 	vector<int> reciever;
 	for(int i=0;i<frames.size();i++){
 		int n;
-		scanf("%d",&n);
-		reciever.push_back(n);
+        cin>>n;
+        reciever.push_back(n);
 	}
 	
     cout<<"The Jumbled Packets at the recieving end are as follows : "<<endl;
