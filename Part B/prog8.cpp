@@ -8,7 +8,7 @@
  *        Version:  1.0
  *        Created:  11/15/2012 03:38:40 PM
  *       Compiler:  GNU Compiler
- *	       Author:  SkyKOG
+ *	    Author:  SkyKOG
  *
  * =====================================================================================
  */
