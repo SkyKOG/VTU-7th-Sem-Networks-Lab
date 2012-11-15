@@ -36,7 +36,6 @@ int main()
 {
     system("clear");
 
-	vector<bool> v;
 	int c;
 	string message;
 	
