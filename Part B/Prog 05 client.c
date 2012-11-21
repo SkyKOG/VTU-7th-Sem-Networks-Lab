@@ -21,7 +21,7 @@ int main()
     char buff[512],fname[256];
     int readfd,writefd;
 
-    printf("\n[CLIENT] trying to Connect to Server");
+    printf("\n[CLIENT] Trying to Connect to Server");
 
     writefd = open(FIFO1,O_WRONLY,0);
     readfd = open(FIFO2,O_RDONLY,0);

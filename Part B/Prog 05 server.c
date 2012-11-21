@@ -27,7 +27,7 @@ int main()
     if(mkfifo(FIFO2,S_IFIFO|PERM)<0)
         perror("FIFO2");
     
-    printf("\n[SERVER]Waiting for connection request : \n");
+    printf("\n[SERVER] Waiting for connection request : \n");
 
     readfd = open(FIFO1,O_RDONLY,0);
     writefd = open(FIFO2,O_WRONLY,0);
