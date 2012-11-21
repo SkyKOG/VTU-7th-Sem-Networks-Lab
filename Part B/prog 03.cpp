@@ -49,13 +49,14 @@ int main()
 		}
 	}	
 
+	cout <<"\nSource\tDestination\tVia\tDistance\n\n";
 	for ( i = 1 ; i <= n; i++)
 	{
-		cout<<"\nState value for router : "<<i<<"\n";
 		for ( j = 1; j <= n; j++)
 		{
-			cout<<"\nDestination Node : "<<j<<" Intermediate/Final Node : "<<rt[i].from[j]<<" Distance : "<<rt[i].dist[j]<<"\n";
+			cout<<i<<"\t"<<j<<"\t\t"<<rt[i].from[j]<<"\t"<<rt[i].dist[j]<<"\n";
 		}
+		cout<<"\n";
 	}
 	return 0;
 }
