@@ -37,21 +37,28 @@ int main()
  		}	
 	}
 
-	for ( i = 1; i <= n ; i++ )
+	int flag = 1;
+
+	while (flag) 
 	{
-		for ( j = 1; j <= n ; j++ )
+		flag = 0;
+		for ( i = 1; i <= n ; i++ )
 		{
-			for ( k = 1; k <= n ; k++ )
+			for ( j = 1; j <= n ; j++ )
 			{
-				if (rt[i].dist[j] > rt[i].dist[k] + rt[k].dist[j])
+				for ( k = 1; k <= n ; k++ )
 				{
-					rt[i].dist[j] = rt[i].dist[k] + rt[k].dist[j];
-					rt[i].from[j] = k;
+					if ( rt[i].dist[j] > rt[i].dist[k] + rt[k].dist[j])
+					{
+						flag = 1;
+						rt[i].dist[j] = rt[i].dist[k] + rt[k].dist[j];
+						rt[i].from[j] = k;
+					}
 				}
 			}
-		}
-	}	
-
+		}	
+	}
+	
 	cout <<"\nSource\tDestination\tVia\tDistance\n\n";
 	for ( i = 1 ; i <= n; i++)
 	{
