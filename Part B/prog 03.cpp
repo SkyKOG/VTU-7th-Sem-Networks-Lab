@@ -1,4 +1,7 @@
-// Author : SkyKOG
+/*
+ * Author : SkyKOG
+ * Distance Vector Routing Algorithm 
+ */
 
 #include <iostream>
 #include <stdio.h>
