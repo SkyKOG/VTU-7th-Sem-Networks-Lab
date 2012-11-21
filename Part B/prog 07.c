@@ -47,7 +47,7 @@ int main()
     for(i=0;i<3;i++)
     {
         for(j=0;j<7;j++)
-        syndrome[i]+=(edata[j]*hmatrix[i][j]);
+            syndrome[i]+=(edata[j]*hmatrix[i][j]);
         syndrome[i]=syndrome[i]%2;
     }
     
