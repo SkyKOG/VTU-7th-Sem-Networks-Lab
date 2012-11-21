@@ -45,10 +45,10 @@ int main()
 
     close(fd);
     close(readfd);
-    close(writefd);
-    
+    close(writefd);    
     unlink(FIFO1);
     unlink(FIFO2);
+    
     return 0;
 }
 
