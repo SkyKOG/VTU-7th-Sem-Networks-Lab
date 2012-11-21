@@ -52,7 +52,7 @@ int main()
 	for ( i = 1 ; i <= n; i++)
 	{
 		cout<<"\nState value for router : "<<i<<"\n";
-		for ( i = 1; i <= n; i++)
+		for ( j = 1; j <= n; j++)
 		{
 			cout<<"\nDestination Node : "<<j<<" Next Node : "<<rt[i].from[j]<<" Distance : "<<rt[i].dist[j]<<"\n";
 		}
