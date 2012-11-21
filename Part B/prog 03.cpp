@@ -1,5 +1,5 @@
-/* GIT TEST
- * Author : SkyKOG
+/*
+ * Authors: SkyKOG & MoNk
  * Distance Vector Routing Algorithm 
  */
 
@@ -59,12 +59,15 @@ int main()
 		}	
 	}
 	
-	cout <<"\nSource\tDestination\tVia\tDistance\n\n";
+
 	for ( i = 1 ; i <= n; i++)
 	{
+		cout<<"\nRouting table for NODE :"<<i<<" \n";
+		cout<<"Destination\tOutgoing Line\tTotal Distance\t\n"; 
 		for ( j = 1; j <= n; j++)
 		{
-			cout<<i<<"\t"<<j<<"\t\t"<<rt[i].from[j]<<"\t"<<rt[i].dist[j]<<"\n";
+			if(i==j) continue;
+			cout<<j<<"\t\t"<<rt[i].from[j]<<"\t\t"<<rt[i].dist[j]<<"\n";
 		}
 		cout<<"\n";
 	}
